@@ -278,8 +278,9 @@ public class TrafficMap {
         TrafficMapGUI.lblTotalCars.setText(lblBaseText + vehicles.size());
         TrafficMapGUI.lblIterations.setText(lblIterationsBaseText + iterations);
         
-        if(iterations == 0) {
+        if(iterations == 0 || vehicles.size() == 0) {
             outputParamsWriter.println(vehicles.size() + " // carros restantes ao fim da simulação");
+	    outputParamsWriter.println(iterations + " // iterações ao fim da simulação");
             outputParamsWriter.flush();
 	    System.exit(0);  // termina aplicação
         }
