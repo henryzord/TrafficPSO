@@ -67,7 +67,7 @@ public class StreetTile extends Tile {
             g.fill(r);
         }
 
-        g.setPaint(Color.BLUE);
+        g.setPaint(Color.YELLOW);
         for (int i = 1; i <= vehicles.size(); i++) {
             switch (way) {
                 case U:

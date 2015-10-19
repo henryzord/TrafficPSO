@@ -1,1 +1,3 @@
 /Simulator/build/
+/Simulator/dist/
+*.pyd

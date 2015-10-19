@@ -56,7 +56,6 @@ public class TrafficMap {
         setup();
         lblBaseText = TrafficMapGUI.lblTotalCars.getText();
         lblIterationsBaseText = TrafficMapGUI.lblIterations.getText();
-        System.out.println("");
     }
 
     private void setup() {
@@ -169,7 +168,6 @@ public class TrafficMap {
                 }
             }
         }
-        System.out.println("Parar!");
     }
 
     //TODO: all available cars at map.
