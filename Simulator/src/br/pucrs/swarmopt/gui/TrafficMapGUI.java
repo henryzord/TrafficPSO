@@ -134,7 +134,7 @@ public class TrafficMapGUI extends javax.swing.JFrame implements Runnable {
         try {
             while (TrafficMap.iterations > 0) {
                 TrafficMap.iterations--;
-                Thread.sleep(200);
+                Thread.sleep(100); 
                 map.updateState();
                 mapPanel.repaint();
             }
