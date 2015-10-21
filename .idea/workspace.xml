@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e3d4fcf-5bf4-431f-998f-d211ffa94733" name="Default" comment="Finished original and inertial versions of PSO.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/Inertial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/Original.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/__canonical__.py" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\.idea\Solver.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\.idea\dictionaries\GPIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Solver\city.py" afterPath="" />
+    <list default="true" id="5e3d4fcf-5bf4-431f-998f-d211ffa94733" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\GPIN\HenryCodes\TrafficPSO\Simulator\dist\README.TXT" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/dist/SwarmOptimization.jar" afterPath="$PROJECT_DIR$/Simulator/dist/SwarmOptimization.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/BuildingTile.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/BuildingTile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/Exec.java" afterPath="$PROJECT_DIR$/Simulator/src/Exec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/Inertial.py" afterPath="$PROJECT_DIR$/Solver/Inertial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/MapPanel.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/MapPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/StreetTile.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/StreetTile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/Tile.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/Tile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/TrafficLight.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/TrafficLight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/TrafficMap.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/TrafficMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/gui/TrafficMapGUI.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/gui/TrafficMapGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/Utils.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/Vehicle.java" afterPath="$PROJECT_DIR$/Simulator/src/br/pucrs/swarmopt/utils/Vehicle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/__canonical__.py" afterPath="$PROJECT_DIR$/Solver/__canonical__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/__init__.py" afterPath="$PROJECT_DIR$/Solver/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/nbproject/build-impl.xml" afterPath="$PROJECT_DIR$/Simulator/nbproject/build-impl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/build.xml" afterPath="$PROJECT_DIR$/Simulator/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/nbproject/genfiles.properties" afterPath="$PROJECT_DIR$/Simulator/nbproject/genfiles.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/cars_app/input_params.txt" afterPath="$PROJECT_DIR$/Simulator/cars_app/input_params.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/manifest.mf" afterPath="$PROJECT_DIR$/Simulator/manifest.mf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/cars_app/map.txt" afterPath="$PROJECT_DIR$/Simulator/cars_app/map.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/nbproject/private/private.properties" afterPath="$PROJECT_DIR$/Simulator/nbproject/private/private.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/Simulator/nbproject/private/private.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/nbproject/project.properties" afterPath="$PROJECT_DIR$/Simulator/nbproject/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/nbproject/project.xml" afterPath="$PROJECT_DIR$/Simulator/nbproject/project.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulator/cars_app/times.txt" afterPath="$PROJECT_DIR$/Simulator/cars_app/times.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrafficPSO.iws" />
@@ -31,7 +43,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TrafficPSO$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1445338595083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OriginalSolver" />
-    <SUITE FILE_PATH="coverage/TrafficPSO$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1445347965347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Solver" />
+    <SUITE FILE_PATH="coverage/TrafficPSO$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1445450596325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Solver" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -54,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inertial.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Inertial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Solver/Inertial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7479407">
-              <caret line="71" column="124" selection-start-line="71" selection-start-column="124" selection-end-line="71" selection-end-column="124" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
               <folding>
                 <element signature="e#38#56#0" expanded="true" />
               </folding>
@@ -70,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/Solver/__canonical__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="163" column="32" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="32" />
+              <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
               </folding>
@@ -88,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Solver/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.6006711">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -117,11 +129,11 @@
         <option value="$PROJECT_DIR$/OriginalSolver/__init__.py" />
         <option value="$PROJECT_DIR$/Solver/canonical.py" />
         <option value="$PROJECT_DIR$/Solver/OriginalSolver.py" />
-        <option value="$PROJECT_DIR$/Solver/__canonical__.py" />
         <option value="$PROJECT_DIR$/Solver/Original.py" />
-        <option value="$PROJECT_DIR$/Solver/__init__.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Solver/Inertial.py" />
+        <option value="$PROJECT_DIR$/Solver/__canonical__.py" />
+        <option value="$PROJECT_DIR$/Solver/__init__.py" />
       </list>
     </option>
   </component>
@@ -161,7 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,6 +208,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,6 +475,13 @@
       <option name="number" value="Default" />
       <updated>1445181273223</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished original and inertial versions of PSO.">
+      <created>1445348088666</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1445348088666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -478,25 +497,26 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3410771" sideWeight="0.48958334" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.48541668" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3410771" sideWeight="0.51666665" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3410771" sideWeight="0.48333332" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33579725" sideWeight="0.4875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33579725" sideWeight="0.48333332" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.48541668" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -517,11 +537,69 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="31" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Solver/__canonical__.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Solver/__canonical__.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Solver/Original.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/Inertial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#38#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/__canonical__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="163" column="32" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="32" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Solver/Original.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -559,24 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/__canonical__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="32" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="32" />
-          <folding>
-            <element signature="e#15#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -587,11 +647,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Solver/Inertial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7479407">
-          <caret line="71" column="124" selection-start-line="71" selection-start-column="124" selection-end-line="71" selection-end-column="124" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
           <folding>
             <element signature="e#38#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/__canonical__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6006711">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

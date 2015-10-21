@@ -60,6 +60,7 @@ def pso(**kwargs):
 	:param x_min: Lower border in the solution space for each axis.
 	:param x_max: Upper border in the solution space for each axis.
 	:param v_max: The maximum velocity which the particle cannot exceed.
+	:param simulator_path: The path where the simulator is.
 	:param input_file: File where the input parameters for the simulator,
 		such as number of iterations, cars and seed, are stored.
 	:param times_file: The file where the times for traffic lights are stored.

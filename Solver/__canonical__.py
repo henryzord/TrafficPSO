@@ -13,7 +13,7 @@ import subprocess
 import numpy as np
 
 
-def swarm_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_file, output_file):
+def swarm_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_file, output_file, simulator_path):
 	"""
 	Calculates the fitness of every particle in the swarm.
 	:param x: An array where each entry is the position of the i-th particle.
@@ -22,6 +22,7 @@ def swarm_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_file,
 	:param times_file: The file where to store the traffic lights times.
 	:param simulator_file: A pointer to the .jar simulator file.
 	:param output_file: A file where the simulator will write the output.
+	:param simulator_path: The path where the simulator is.
 	:return: An array where each entry is the fitness of each particle in the swarm.
 	"""
 
@@ -29,12 +30,12 @@ def swarm_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_file,
 
 	fitness = np.empty(n_individuals, dtype=np.float)
 	for i in xrange(n_individuals):
-		fitness[i] = particle_fitness(x[i], n_cars, n_simulator_iterations, times_file, simulator_file, output_file)
+		fitness[i] = particle_fitness(x[i], n_cars, n_simulator_iterations, times_file, simulator_file, output_file, simulator_path)
 
 	return fitness
 
 
-def particle_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_file, output_file):
+def particle_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_file, output_file, simulator_path):
 	"""
 	Calculates the fitness of a particle in the swarm.
 	:param x: The particle position.
@@ -43,11 +44,12 @@ def particle_fitness(x, n_cars, n_simulator_iterations, times_file, simulator_fi
 	:param times_file: The file where to store the traffic lights times.
 	:param simulator_file: A pointer to the .jar simulator file.
 	:param output_file: A file where the simulator will write the output.
+	:param simulator_path: The path where the simulator is.
 	:return: A float with the fitness of this particle.
 	"""
 
 	write_times(times_file, x)  # writes times to times file
-	subprocess.call(['java', '-jar', simulator_file])
+	subprocess.call(['java', '-jar', simulator_file, simulator_path])
 	results = read_output(output_file)
 
 	norm_cars = float(results[0]) / n_cars  # the smaller the better
@@ -69,7 +71,7 @@ def write_input(filename, **kwargs):
 	with open(filename, 'wb') as input_file:
 		input_file.write(str(kwargs['iterations']) + ' // iterações\n')
 		input_file.write(str(kwargs['cars']) + ' // carros\n')
-		input_file.write(str(kwargs['seed']) + '// seed')
+		input_file.write(str(kwargs['seed']) + ' // seed')
 
 
 def write_times(filename, x):
@@ -129,6 +131,7 @@ def core(**kwargs):
 	:param x_min: Lower border in the solution space for each axis.
 	:param x_max: Upper border in the solution space for each axis.
 	:param v_max: The maximum velocity which the particle cannot exceed.
+	:param simulator_path: The path where the simulator is.
 	:param input_file: File where the input parameters for the simulator,
 		such as number of iterations, cars and seed, are stored.
 	:param times_file: The file where the times for traffic lights are stored.
@@ -152,7 +155,7 @@ def core(**kwargs):
 	kwargs['g_best'] = kwargs['p_best'][0]
 
 	for i in xrange(kwargs['n_iterations']):
-		kwargs['p_current'] = swarm_fitness(kwargs['x'], kwargs['n_cars'], kwargs['n_simulator_iterations'], kwargs['times_file'], kwargs['simulator_file'], kwargs['output_file'])
+		kwargs['p_current'] = swarm_fitness(kwargs['x'], kwargs['n_cars'], kwargs['n_simulator_iterations'], kwargs['times_file'], kwargs['simulator_file'], kwargs['output_file'], kwargs['simulator_path'])
 		for j in xrange(kwargs['n_particles']):
 			if kwargs['p_current'][j] > kwargs['p_best'][j]:
 				kwargs['p_best'][j] = kwargs['p_current'][j]

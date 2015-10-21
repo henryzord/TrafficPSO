@@ -8,6 +8,7 @@ package br.pucrs.swarmopt.utils;
 import br.pucrs.swarmopt.gui.TrafficMapGUI;
 import java.awt.Graphics2D;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -15,7 +16,6 @@ import static java.lang.Math.abs;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,23 +23,17 @@ import javax.swing.JOptionPane;
  * @author gabriel
  */
 public class TrafficMap {
+
     static Tile map[][] = new Tile[20][30];
     public static Random r;
     public static int iterations = 0;
-    
+
     int remaining_cars = -1;
-    
+
     StreetTile inputCars;
-//    String mapFilePath = "/home/gabriel/Desktop/cars_app/map.txt";
-//    String trafficTimesFilePath = "/home/gabriel/Desktop/cars_app/times.txt";
-//    String inputParams = "/home/gabriel/Desktop/cars_app/input_params.txt";
-//    String outputParams = "/home/gabriel/Desktop/cars_app/output_params.txt";
-    
-    String mapFilePath = "c:/temp/cars_app/map.txt";
-    String trafficTimesFilePath = "c:/temp/cars_app/times.txt";
-    String inputParams = "c:/temp/cars_app/input_params.txt";
-    String outputParams = "c:/temp/cars_app/output_params.txt";
-    
+
+    String filesPath, mapFilePath, trafficTimesFilePath, inputParams, outputParams;
+
     List<StreetTile> mapOutput = new ArrayList<StreetTile>();
     List<StreetTile> mapInput = new ArrayList<StreetTile>();
     List<TrafficLight> trafficLights = new ArrayList<>();
@@ -48,26 +42,23 @@ public class TrafficMap {
     String lblIterationsBaseText = "";
     boolean flag = false;
     PrintWriter outputParamsWriter;
-    
-    
-    JFileChooser fChooser = new JFileChooser(System.getProperty("user.home"));
+    private String path = null;
 
-    public TrafficMap() {
-        setup();
+    public TrafficMap(String path) {
+        this.path = path;
+	setup();
         lblBaseText = TrafficMapGUI.lblTotalCars.getText();
         lblIterationsBaseText = TrafficMapGUI.lblIterations.getText();
     }
 
     private void setup() {
-//        JOptionPane.showMessageDialog(null, "Select map file...");
-//        fChooser.showOpenDialog(null);
-//        mapFilePath = fChooser.getSelectedFile().getAbsolutePath();
-//        
-//        JOptionPane.showMessageDialog(null, "Select traffic lights time file...");
-//        fChooser.showOpenDialog(null);
-//        trafficTimesFilePath = fChooser.getSelectedFile().getAbsolutePath();
-        
+
         try {
+            mapFilePath = this.path + File.separator + "map.txt";
+            trafficTimesFilePath = this.path + File.separator + "times.txt";
+            inputParams = this.path + File.separator + "input_params.txt";
+            outputParams = this.path + File.separator + "output_params.txt";
+
             FileReader mapFile = new FileReader(mapFilePath);
             BufferedReader mapReader = new BufferedReader(mapFile);
 
@@ -79,20 +70,20 @@ public class TrafficMap {
 
             FileWriter outputParamsFile = new FileWriter(outputParams);
             outputParamsWriter = new PrintWriter(outputParamsFile);
-            
-	    String str_iters = inputParamsReader.readLine();
-	    str_iters = str_iters.substring(0, str_iters.indexOf("//")).trim();
-	    iterations = Integer.parseInt(str_iters);
-	    
-	    String str_cars = inputParamsReader.readLine();
-	    str_cars = str_cars.substring(0, str_cars.indexOf("//")).trim();
-	    this.remaining_cars = Integer.parseInt(str_cars);
-	    
-	    String str_random = inputParamsReader.readLine();
-	    str_random = str_random.substring(0, str_random.indexOf("//")).trim();
-	    
-	     r = new Random(Integer.parseInt(str_random));
-	    
+
+            String str_iters = inputParamsReader.readLine();
+            str_iters = str_iters.substring(0, str_iters.indexOf("//")).trim();
+            iterations = Integer.parseInt(str_iters);
+
+            String str_cars = inputParamsReader.readLine();
+            str_cars = str_cars.substring(0, str_cars.indexOf("//")).trim();
+            this.remaining_cars = Integer.parseInt(str_cars);
+
+            String str_random = inputParamsReader.readLine();
+            str_random = str_random.substring(0, str_random.indexOf("//")).trim();
+
+            r = new Random(Integer.parseInt(str_random));
+
             String line;
             char tiles[];
             int i = 0;
@@ -189,8 +180,8 @@ public class TrafficMap {
 
     public static Tile[] getNeighbours(Tile[][] map, int i, int j) {
         Tile neightbours[] = new Tile[4];
-        
-        neightbours[StreetTile.U] = (i == 0)? null : map[i - 1][j];
+
+        neightbours[StreetTile.U] = (i == 0) ? null : map[i - 1][j];
         neightbours[StreetTile.D] = (i == map.length - 1) ? null : map[i + 1][j];
         neightbours[StreetTile.L] = (j == 0) ? null : map[i][j - 1];
         neightbours[StreetTile.R] = (j == map[i].length - 1) ? null : map[i][j + 1];
@@ -267,20 +258,20 @@ public class TrafficMap {
             }
         }
 
-	if(this.remaining_cars > 0) {
-	    addVehicles();
-	}
-		
-	updateVehicles();
+        if (this.remaining_cars > 0) {
+            addVehicles();
+        }
+
+        updateVehicles();
         //TODO Create GUI panel display update method.
         TrafficMapGUI.lblTotalCars.setText(lblBaseText + vehicles.size());
         TrafficMapGUI.lblIterations.setText(lblIterationsBaseText + iterations);
-        
-        if(iterations == 0 || vehicles.size() == 0) {
+
+        if (iterations == 0 || vehicles.size() == 0) {
             outputParamsWriter.println(vehicles.size() + " // carros restantes ao fim da simulação");
-	    outputParamsWriter.println(iterations + " // iterações ao fim da simulação");
+            outputParamsWriter.println(iterations + " // iterações ao fim da simulação");
             outputParamsWriter.flush();
-	    System.exit(0);  // termina aplicação
+            System.exit(0);  // termina aplicação
         }
     }
 
@@ -298,22 +289,22 @@ public class TrafficMap {
     }
 
     public void addVehicles() {
-	for(int i = 0; i < mapInput.size(); i++) {
-	    StreetTile tile = mapInput.get(i);
-	    
-	    int free_space = tile.availableSpace();
-	    if(free_space > 0) {
-		int s = ((abs(r.nextInt()) % free_space) + 1) % remaining_cars; 
-		remaining_cars -= s;
+        for (int i = 0; i < mapInput.size(); i++) {
+            StreetTile tile = mapInput.get(i);
 
-		for (int j = 0; j < s; j++) {
-		    Vehicle v = new Vehicle(tile);
-		    v.updated = true;
-		    vehicles.add(v);
-		    tile.addVehicles(v);
-		}
-	    }
-	}
+            int free_space = tile.availableSpace();
+            if (free_space > 0) {
+                int s = ((abs(r.nextInt()) % free_space) + 1) % remaining_cars;
+                remaining_cars -= s;
+
+                for (int j = 0; j < s; j++) {
+                    Vehicle v = new Vehicle(tile);
+                    v.updated = true;
+                    vehicles.add(v);
+                    tile.addVehicles(v);
+                }
+            }
+        }
     }
 
     public void printMap(Graphics2D canvas) {
@@ -327,6 +318,10 @@ public class TrafficMap {
             yP += Tile.H;
         }
 
+    }
+
+    public void setPath(String path) {
+	this.path = path;
     }
 
 }

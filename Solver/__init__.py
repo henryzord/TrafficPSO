@@ -9,15 +9,20 @@ import numpy as np
 
 
 def main():
-	simulator_file = os.path.join('..', 'Simulator', 'dist', 'SwarmOptimization.jar')
-	input_file = os.path.join('C:\\', 'temp', 'cars_app', 'input_params.txt')
-	output_file = os.path.join('C:\\', 'temp', 'cars_app', 'output_params.txt')
-	times_file = os.path.join('C:\\', 'temp', 'cars_app', 'times.txt')
+	simulator_path = os.path.join('..', 'Simulator', 'dist')
+	simulator_file = os.path.join(simulator_path, 'SwarmOptimization.jar')
+	input_file = os.path.join(simulator_path, 'input_params.txt')
+	output_file = os.path.join(simulator_path, 'output_params.txt')
+	times_file = os.path.join(simulator_path, 'times.txt')
+
+	# input_file = os.path.join('C:\\', 'temp', 'cars_app', 'input_params.txt')
+	# output_file = os.path.join('C:\\', 'temp', 'cars_app', 'output_params.txt')
+	# times_file = os.path.join('C:\\', 'temp', 'cars_app', 'times.txt')
 	original_solution_file = os.path.join('C:\\', 'temp', 'cars_app', 'original_solution.txt')
 	inertial_solution_file = os.path.join('C:\\', 'temp', 'cars_app', 'inertial_solution.txt')
 
-	n_simulator_iterations = 100
-	n_cars = 100
+	n_simulator_iterations = 50
+	n_cars = 300
 	seed = 1
 
 	x_max = 10  # max time that a traffic light may be green (per traffic light)
@@ -65,6 +70,7 @@ def main():
 		x_min=x_min,
 		x_max=x_max,
 		v_max=v_max,
+		simulator_path=simulator_path,
 		input_file=input_file,
 		times_file=times_file,
 		output_file=output_file,
